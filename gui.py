@@ -1,0 +1,10 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("School Gate Monitor")
+status_label = tk.Label(window, text="Waiting for scan...")
+status_label.pack()
+log_text = tk.Text(window, height=10, width=50)
+log_text.pack()
+inside_list = tk.Listbox(window, height=5)
+inside_list.pack()
+window.mainloop()
